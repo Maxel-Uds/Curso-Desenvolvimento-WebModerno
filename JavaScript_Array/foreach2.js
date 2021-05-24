@@ -1,4 +1,4 @@
-Array.prototype.forEach2 = function(callback) {
+Array.prototype.forEach2 = function(callback) { //Função implementada no protótipo da classe Array
     for(let i = 0; i < this.length; i++)
     {
         callback(this[i], i, this);
