@@ -1,8 +1,11 @@
 npm i [nome do pacote] -> instala um pacote
 npm i -g [nome do pacote] -> instala um pacote de forma global
+npm start -> comando feito dentro da pasta do que contém o projeto para executa-lo (roda um script dentro do package.json)
+npm run [script] -> serve para excutar scripts personalizados criados pelo usúario que não vem por padrão no node
 nodemon [nome do arquivo.js] -> executa o arquivo e mostra as alterações na execução em tempo real
 npm i --save [nome do pacote] -> instala um pacote e cria uma área no arquivo package.json para colocar as dependências do projeto
 npm init -> cria um arquivo package.json fazendo as perguntas
-npm init -y -> cria um arquivo package.json fazendo respondendo sim a tudo
+npm init -y -> cria um arquivo package.json respondendo sim a tudo
 
-*package.json -> descreve o projeto e as dependências que o projeto precisa
+#package.json -> descreve o projeto e as dependências que o projeto precisa, e ajuda na reconstrução da pasta node_modules através do comando "npm i" executado dentro da pasta.
+#"start" dentro do package.json -> é um script padrão do node no qual se define qual ferramenta irá executar o arquivo.
