@@ -1,6 +1,7 @@
 <h1>Formulário</h1>
 
-<form action="http://localhost:3003/usuarios" method="POST">
+<form method="POST">
+    <input type="hidden" name="id" value="3">
     <label for="nome">Escreva seu nome:</label>
     <input type="text" name="nome" id="nome">
     <input type="password" name="senha">
@@ -30,7 +31,8 @@
         <option value="c">C</option>
     </select>
 
-    <button>Incluir</button>
+    <button formaction="http://localhost:3003/usuarios">Incluir</button>
+    <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
 </form>
 
 <style>
