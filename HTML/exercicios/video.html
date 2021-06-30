@@ -4,12 +4,12 @@
 </video>
 
 <div wm-progresso="meuVideo" class="progresso">
-    <div></div>
+    <div wm-barra></div>
 </div>
 
 <div>
-    <button wm-play="meuVideo">Play</button>
-    <button wm-pause="meuVideo">Pause</button>
+    <button wm-play="meuVideo" onclick="iniciar('meuVideo')">Play</button>
+    <button wm-pause="meuVideo" onclick="pausar('meuVideo')">Pause</button>
 </div>
 
 <style>
@@ -29,3 +29,31 @@
         width: 0%;
     }
 </style>
+
+<script>
+    function iniciar(id)
+    {
+        const video = document.getElementById(id);
+        video.play();
+    
+    }
+
+    function pausar(id)
+    {
+        const video = document.getElementById(id);
+        video.pause();
+    }
+
+    function progresso()
+    {
+        // const video = document.getElementsByTagName('source');
+        // const videoDuracao = video.duration;
+        const barra = document.querySelector('[wm-barra]');
+        // console.log(video)
+        let progress = 2.27;
+        setInterval(() => {
+            barra.style.width = `${progress}%`;
+            progress += 2.27;
+        }, 1000);
+    }
+</script>
