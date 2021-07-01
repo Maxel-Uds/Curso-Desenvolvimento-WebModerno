@@ -8,8 +8,8 @@
 </div>
 
 <div>
-    <button wm-play="meuVideo" onclick="iniciar('meuVideo')">Play</button>
-    <button wm-pause="meuVideo" onclick="pausar('meuVideo')">Pause</button>
+    <button wm-play="meuVideo">Play</button>
+    <button wm-pause="meuVideo">Pause</button>
 </div>
 
 <style>
@@ -31,40 +31,47 @@
 </style>
 
 <script>
-    function iniciar(id)
+    function configVideo(id)
     {
         const video = document.getElementById(id);
-        video.play();
-        progresso();
+        video.oncontextmenu = () => false;
+
+        document.querySelector(`[wm-play=${id}]`).onclick = () => video.play();
+        document.querySelector(`[wm-pause=${id}]`).onclick = () => video.pause();
+
+        setInterval(() => {
+            const passo = (video.currentTime / video.duration) * 100;
+            const barra = document.querySelector('[wm-barra]');
+            barra.style.width = `${passo}%`;
+            barra.innerHTML = `${passo.toFixed(1)}%`;
+        }, 1000);
     }
 
-    function pausar(id)
-    {
-        const video = document.getElementById(id);
-        video.pause();
-    }
+    // Antiga função da barra de progresso
+    // function progresso()
+    // {
+    //     const video = document.getElementById('meuVideo');
+    //     const barra = document.querySelector('[wm-barra]');
+    //     const videoDuracao = video.duration;
+    //     let passo = (100/videoDuracao);
+    //     const videoProgress = passo;
 
-    function progresso()
-    {
-        const video = document.getElementById('meuVideo');
-        const barra = document.querySelector('[wm-barra]');
-        const videoDuracao = video.duration;
-        let passo = (100/videoDuracao);
-        const videoProgress = passo;
+    //     let progressBar = function() {
+    //         let tempoAtual = video.currentTime;
+    //         if(tempoAtual < videoDuracao)
+    //         {
+    //             barra.style.width = `${passo}%`;
+    //             barra.innerHTML = `${passo.toFixed(1)}%`;
+    //             passo += videoProgress;
+    //         }
+    //         else
+    //         {
+    //            clearInterval(interval);
+    //         }
+    //     }
 
-        let progressBar = function() {
-            let tempoAtual = video.currentTime;
-            if(tempoAtual < videoDuracao)
-            {
-                barra.style.width = `${passo}%`;
-                passo += videoProgress;
-            }
-            else
-            {
-               clearInterval(interval);
-            }
-        }
+    //     let interval = setInterval(progressBar, 1000);
+    // }
 
-        let interval = setInterval(progressBar, 1000);
-    }
+    configVideo('meuVideo');
 </script>
