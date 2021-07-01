@@ -35,7 +35,7 @@
     {
         const video = document.getElementById(id);
         video.play();
-    
+        progresso();
     }
 
     function pausar(id)
@@ -46,14 +46,25 @@
 
     function progresso()
     {
-        // const video = document.getElementsByTagName('source');
-        // const videoDuracao = video.duration;
+        const video = document.getElementById('meuVideo');
         const barra = document.querySelector('[wm-barra]');
-        // console.log(video)
-        let progress = 2.27;
-        setInterval(() => {
-            barra.style.width = `${progress}%`;
-            progress += 2.27;
-        }, 1000);
+        const videoDuracao = video.duration;
+        let passo = (100/videoDuracao);
+        const videoProgress = passo;
+
+        let progressBar = function() {
+            let tempoAtual = video.currentTime;
+            if(tempoAtual < videoDuracao)
+            {
+                barra.style.width = `${passo}%`;
+                passo += videoProgress;
+            }
+            else
+            {
+               clearInterval(interval);
+            }
+        }
+
+        let interval = setInterval(progressBar, 1000);
     }
 </script>
