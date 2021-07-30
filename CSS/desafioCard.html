@@ -7,37 +7,46 @@
     <style>
         .curso {
             display: inline-block;
+            font-family: Verdana, sans-serif;
             box-shadow: 0 0 1em rgb(53, 52, 52);
             padding: 5px;
-            width: min-content;
+            width: min-content; /*-> A largura terá o minímo de tamanho sem extrapolar o conteúdo*/
+            height: 300px;
             margin: 20px;
         }
 
         .curso img {
             height: 160px;
-            width: 270px;
+            width: 250px;
         }
 
         .curso-info {
-            text-align: justify;
-            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+            height: 90px;
+            overflow: hidden;
+        }
+
+        .curso-info h4 {
+            font-size: 1.4em;
+            font-weight: 100;
+            margin: 0;
         }
 
         .curso-preco {
             float: right;
-            font-family:  Arial, Helvetica, sans-serif;
+            padding: 10px;
         }
 
         .preco-de {
             color: red;
             text-decoration: line-through;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .preco-por {
             color: green;
             font-weight: bolder;
-            font-size: 30px;
+            font-size: 20px;
         }
     </style>
 </head>
