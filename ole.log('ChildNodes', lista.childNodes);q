@@ -1,0 +1,196 @@
+[33m3339900[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Acessando Atributos parte 1
+[33m16318ba[m Selecionando elementos com JS parte 4
+[33m1a5440b[m Selecionando elementos com JS parte 3
+[33m4078357[m Selecionando elementos com JS parte 2
+[33m89b5816[m Selecionando elementos com JS parte 1
+[33mdf98ccd[m Arquivos do módulo 15 do Curso de Web
+[33md3bb2f8[m CSS Grid parte 3
+[33m08b98da[m CSS Grid parte 2
+[33mf3a1f03[m CSS Grid parte 1
+[33mf1a508d[m Desafio menu com Flexbox
+[33m3cff2af[m Flexbox parte 3
+[33m44319f1[m Flexbox parte 2
+[33m0913150[m Flexbox parte 1
+[33m8980a9f[m Desafio Card corrigido
+[33m6c1c0c7[m Desafio Card minha resolução
+[33m8ef7a97[m Desafio menu resolvido
+[33mf2a2171[m Desafio menu minha versão ruim
+[33me51fb93[m Media Query (@media)
+[33m6daaa72[m Usando position em CSS
+[33mb8e32bf[m Trabalhado com Texto
+[33mdad4fc0[m Unidades de medida e position
+[33mc8ca701[m Unidades absolutas e relativas de medida
+[33m278280a[m Cores em CSS
+[33m4b67f91[m Propriedade Float
+[33mf8468ad[m Propriedade Overflow
+[33m0606b44[m Box Sizing (border-box: calcula a altura e largura levando em conta o padding e a borda, não só o tamanho do conteúdo)
+[33maf40ff6[m Altura e Largura
+[33m3a05eb3[m Propriedade Display
+[33me987843[m Box Model
+[33mdff3bf5[m Herança no CSS
+[33ma1365bb[m Especifidades do CSS parte 2
+[33m78bae1f[m Especifidades do CSS parte 1
+[33m4c049ea[m Seletores CSS
+[33m3dd3d3e[m Criando a classe .tag
+[33m6d3d08a[m CSS Interno, Externo e Inline
+[33m8c43187[m Anatomia do CSS
+[33mb79c78c[m Arquivos HTML que serão usados na seção de CSS do curso add
+[33m6d7eb14[m Tags importantes não visuais
+[33mebb751b[m Deasfio de controlar vídeo (Correção)
+[33m1543756[m Minha versão do desafio de controlar vídeo (completa)
+[33m4584aaf[m Minha versão do desafio de controlar vídeo (incompleto)
+[33m3a2c691[m Trabalhando com vídeo
+[33m9b51caf[m Desafio slider parte 2
+[33mef5499a[m Desafio slider parte 1
+[33m7d73394[m Trabalhando com imagens
+[33m9613951[m Formulários parte 3
+[33mf5f7d7b[m Formulários parte 2
+[33md758ad7[m Fomulários parte 1 (Usando requisição)
+[33m406dfbd[m Tabelas em HTML
+[33m73bacd2[m Links parte 2
+[33mcd871bf[m Links parte 1
+[33m8ee487d[m Desafio de tornar a lista aninhada dinâmica
+[33m8b1394b[m Lista Aninhada
+[33ma4ce396[m Listas
+[33m540663c[m Tags para textos parte 2
+[33m3619d8c[m Tags para textos parte 1
+[33mf42d5ea[m Texto puro Vs Browser
+[33m3047506[m Criando a estrutura para realizar os exercícios
+[33mb37a226[m Um pouco de CSS e sua integração ao HTML
+[33me8d5eac[m Anatomia do HTML
+[33m402121f[m Anatomia da tag (HTML)
+[33m94394c1[m Async/Await parte 2
+[33mbc293c6[m Async/Await parte 1
+[33macac06d[m Promise parte 5
+[33m879b6e3[m Promise parte 4
+[33mb7aa4e7[m Desafio: lendo arquivo com promise
+[33m84d40b3[m Promise parte 3
+[33m1586452[m Promise parte 2
+[33m3802da4[m Promise parte 1
+[33m70d6668[m Usando Async/Await
+[33m8af18ac[m Refatorando o código com promises
+[33md65145b[m Usando callbacks aninhadas
+[33m4bea706[m Promises
+[33m15bddfa[m Laço de repetição FOR OF
+[33m98055e3[m Estrutura de conjuntos usando o Set
+[33mab66e4a[m Estrutura map
+[33m39eb467[m Tagged template parte 2
+[33m01893c5[m Tagged template parte 1
+[33mc5cba06[m Operador rest/spread
+[33ma32064a[m Revisão parte 3
+[33m7183125[m Revisão parte 2
+[33m26956f5[m Revisão parte 1
+[33m368c5c9[m Process: Entrada e Saída Padrão
+[33m314b82f[m Trefas agendadas com temporizador através do node-schedule
+[33mef1419d[m Projeto: API com Express parte 3
+[33m303f0f1[m Projeto: API com Express parte 2
+[33m375a8d4[m Projeto: API com Express parte 1
+[33m2b1f1dd[m Lista excluída
+[33m14afdc0[m Lista de commits gerada pelo Git Bash
+[33mf7cbd06[m Update README.md
+[33m2708ea5[m Padrão Middleware ou cadeia de responsabilidades
+[33m709cfc6[m Escrevendo em arquivos com o fs.writeFile( )
+[33m18bb0db[m Lendo arquivos de forma síncrona e assíncrona
+[33me127887[m npm start, e npm run [script] adicionados
+[33m754f855[m Passagem de parâmetros entre módulos
+[33m7217135[m Escopo da palavra THIS no contexto de módulos
+[33m20bf22c[m Objeto Global do Node
+[33m1f1d926[m Instância única Vs instância nova
+[33m1052541[m Arquivo package.json e desafio resolvido
+[33m3cccb87[m Comandos importantes do npm
+[33m78fa1ac[m Sistemas de módulos: Exports
+[33maee03a7[m Sistema de módulos: Require
+[33m519a167[m Usando módulos de terceiros e instalando bibliotecas
+[33m36eed61[m Introdução aos módulos do Node e exportação de módulos
+[33ma450ade[m Função flatMap
+[33m9ee8e6f[m Função .concat()
+[33mb757600[m Código imperativo VS código declarativo
+[33mc12e4ff[m Reduce parte 3
+[33m93c3e9b[m Reduce parte 2
+[33m7651bda[m Reduce parte 1
+[33m9e43068[m Filter parte 2
+[33m599a071[m Filter parte 1
+[33m1657cf7[m Map parte 3
+[33ma22637e[m Map parte 2
+[33m2651ea3[m Map parte 1
+[33m3af8ca5[m Update foreach2.js
+[33mabbda89[m Foreach parte 2
+[33meb21b3a[m Foreach parte 1
+[33m79ce033[m Funções importantes do array
+[33mfde907e[m Introdução ao array e funções básicas
+[33m8d220d8[m Classe parte 2
+[33me1515ba[m Classe parte 1
+[33md76a999[m JSON vs Objeto
+[33m589389f[m Meios de evitar a mudança de objetos
+[33m8774805[m Herança parte 6
+[33mbdf12b3[m Herança parte 5
+[33mf00a935[m Herança parte 4
+[33m78b57a4[m Herança parte 3
+[33mb8c4df6[m Herança parte 2
+[33m6566d24[m Herança parte 1
+[33mff76cf7[m Funções importantes do objeto
+[33m0419717[m Usando get e set para acessar e atribuir valores
+[33mf263f75[m Notação literal (mudanças do ES 2015)
+[33m5ab68b1[m Objetos constantes
+[33m2b95d6a[m Formas de criar objetos em js
+[33mfceb814[m Revisão sobre objeto
+[33m65c1c43[m Conceitos sobre Orientação a Objetos
+[33mb8d682b[m Invocação de funções usando call e apply
+[33m4cf0fc3[m IIFE
+[33m5f05f18[m Classe vs Factory
+[33m6f5e5ac[m Função factory parte 2
+[33m64a5510[m Função factory parte 1
+[33ma8d84df[m Closure em funções JS
+[33m28d49e4[m Contexto léxico de declaração da função
+[33mc6e597f[m Tipos de declarações de funções
+[33m2b8a85a[m Funções construtoras
+[33m8171fc4[m Funções de Callback
+[33m7bf6685[m Funções anônimas em JS
+[33me4d2124[m Arrow Functions
+[33m0317026[m Amarrando o 'This' com Bind e Self
+[33md5ecaea[m Parâmetros padrão com ES 2015
+[33ma39f49f[m Usando o 'arguments'
+[33med469dd[m First-Class Object
+[33m1c7b924[m Estrutura FOR/IN
+[33mcf7280e[m Estrutura FOR
+[33m8a4fcb9[m Estrutura DO/WHILE
+[33m5c61b47[m Estrutura WHILE
+[33m5212480[m Estrutura SWITCH
+[33m3b864d4[m Estrutura IF/ELSE_IF
+[33m1618466[m Estrutura IF/ELSE
+[33m3886e28[m Usando IF parte 2
+[33mab304fc[m Usando o IF parte 1
+[33m9bd46ec[m Operadores: lógicos
+[33mf87e619[m Operadores: relacionais
+[33mcce3c83[m Operadores: aritméticos
+[33mdabb73a[m Operadores: destructuring parte 4
+[33m73e4820[m Operadores: destructuring parte 3
+[33m488ad46[m Operadores: destructuring parte 2
+[33m6a8cb9f[m Operadores: destructuring parte 1
+[33m9e390c8[m Operadores: atribuição
+[33md5cf6ee[m Chave/Valor
+[33ma7352e1[m Função vs Objeto
+[33ma197842[m Exemplo de hoisting
+[33m257b0d1[m Usando let em loop parte 2
+[33m0a1a9b8[m Usando var em loop parte 2
+[33mb0e6dfb[m Usando o let em loop parte 1
+[33m63001ba[m Usando Var em um loop
+[33mc55202d[m Usando o Let
+[33m8883c70[m Usando Var parte 2
+[33m22f8774[m Usando o Var parte 1
+[33m3b90d3d[m Funções básicas parte 2
+[33m7e37074[m Funções básicas parte 1
+[33me61de8c[m Exemplo de funções
+[33mba3e958[m Conceitos de null e undefined
+[33m09f8860[m Object em JS
+[33m0a8a2e5[m Arrays em JS
+[33m5f275cc[m tipos booleanos
+[33m9434404[m Template string
+[33mbbf828c[m Strings e suas funções
+[33m410db0a[m Math do tipo object
+[33m20f3e3c[m Tipo e função Number
+[33m429a29f[m Tipagem fraca
+[33m2011945[m Let, Var e Const
+[33m994a7c4[m Exemplo de organização de um código em JS
+[33mcf28b98[m Update README.md
+[33m8f5e0b8[m Initial commit
