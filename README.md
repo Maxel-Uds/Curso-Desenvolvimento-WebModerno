@@ -1,4 +1,4 @@
-<h1 align="center">Curso de Deselvolvimento Web Moderno</h1>
+<h1 align="center">Curso de Deselvolvimento Web Moderno!</h1>
 <p align="center">Curso de desenvolvimento web que aborda todas as tecnologias mais importantes para a área, cursando na plataforma Udemy e sendo ministrado pela Escola Cod3r.</p>
 <h1 align="center">
     <img src="https://github.com/Maxel-Uds/Teste_de_Codigos/blob/main/web-development-.png" width="300px" height="300px"/>
