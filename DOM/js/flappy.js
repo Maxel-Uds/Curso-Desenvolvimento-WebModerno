@@ -15,11 +15,6 @@ function Barreira(reversa = false) {
     this.setAltura = altura => corpo.style.height = `${altura}px`;
 }
 
-const barreiras = new Barreiras(700, 1000, 200, 400);
-//b.setAltura(200);
-const area = document.querySelector('[wm-flappy]');
-barreiras.pares.forEach(par => area.appendChild(par.elemento));
-
 function ParDeBarreiras(altura, abertura, x) {
     this.elemento = novoElemento('div', 'par-de-barreiras');
 
@@ -55,7 +50,7 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
     const deslocamento = 3;
     this.animar = () => {
         this.pares.forEach(par => {
-            par.setX.par.getX() - deslocamento;
+            par.setX(par.getX() - deslocamento);
 
             if(par.getX() < -par.getLargura()) {
                 par.setX(par.getX() + espaco * this.pares.length);
@@ -68,3 +63,41 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
         })
     }
 }
+
+function Passaro(alturaJogo) {
+    let voando = false;
+    this.elemento = novoElemento('img', 'passaro');
+    this.elemento.src = 'imgs/passaro.png';
+
+    this.getY = () => parseInt(this.elemento.style.bottom.split('px')[0]);
+    this.setY = y => this.elemento.style.bottom = `${y}px`;
+
+    window.onkeydown = e => voando = true;
+    window.onkeyup = e => voando = false;
+
+    this.animar = () => {
+       const novoY = this.getY() + (voando ? 8 : -5);
+       const alturaMaxima = alturaJogo - this.elemento.clientHeight;
+       
+       if(novoY <= 0) {
+            this.setY(0);  
+       } else if(novoY >= alturaMaxima) {
+            this.setY(alturaMaxima);
+       } else {
+           this.setY(novoY);
+       }
+    }
+
+    this.setY(alturaJogo / 2); 
+}
+
+//const barreiras = new Barreiras(700, 1200, 200, 400);
+//const passaro = new Passaro(700);
+//const area = document.querySelector('[wm-flappy]');
+
+//area.appendChild(passaro.elemento);
+//barreiras.pares.forEach(par => area.appendChild(par.elemento));
+//setInterval(() => { 
+//    barreiras.animar();
+//    passaro.animar(); 
+//}, 20);
