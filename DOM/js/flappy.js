@@ -91,13 +91,35 @@ function Passaro(alturaJogo) {
     this.setY(alturaJogo / 2); 
 }
 
-//const barreiras = new Barreiras(700, 1200, 200, 400);
-//const passaro = new Passaro(700);
-//const area = document.querySelector('[wm-flappy]');
+function Progresso() {
+    this.elemento = novoElemento('span', 'progresso');
+    this.atualizarPontos = pontos => {
+        this.elemento.innerHTML = pontos;
+    }
+    this.atualizarPontos(0);
+}
 
-//area.appendChild(passaro.elemento);
-//barreiras.pares.forEach(par => area.appendChild(par.elemento));
-//setInterval(() => { 
-//    barreiras.animar();
-//    passaro.animar(); 
-//}, 20);
+function FlappyBird() {
+    let pontos = 0;
+
+    const areaDoJogo = document.querySelector('[wm-flappy]');
+    const altura = areaDoJogo.clientHeight;
+    const largura = areaDoJogo.clientWidth;
+
+    const progresso = new Progresso();
+    const barreiras = new Barreiras(altura, largura, 200, 400, () => progresso.atualizarPontos(++pontos));
+    const passaro = new Passaro(altura);
+
+    areaDoJogo.appendChild(progresso.elemento);
+    areaDoJogo.appendChild(passaro.elemento);
+    barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento));
+
+    this.start = () => {
+        const temporizador = setInterval(() => {
+            barreiras.animar();
+            passaro.animar();
+        }, 20);
+    }
+}
+
+new FlappyBird().start();
