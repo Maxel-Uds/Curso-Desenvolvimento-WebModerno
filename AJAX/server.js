@@ -7,5 +7,5 @@ app.use(express.static('.'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get('/teste', (req, res) => res.send('ok'));
+app.get("/dados/estados.json");
 app.listen(8080, () => console.log('Executando...'));
