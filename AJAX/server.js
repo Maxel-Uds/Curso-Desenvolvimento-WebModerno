@@ -36,4 +36,33 @@ app.post('/formulario', (req, res) => {
     });
 });
 
+app.get('/parOuImpar', (req, res) => {
+    // Formas de receber dados: 
+    // 1 - req.body
+    // 2 - req.query(uri?var=valor)
+    // 3 - req.params(uri/valor)(back: uri/:var)
+    // Query é a requisição padrão? 
+
+
+    const par = parseInt(req.query.numero) % 2 == 0;
+    res.send({
+        resultado: par? 'par' : 'impar'
+    });
+
+    // Como achei que era
+    // const num = parseInt(req.query.numero)
+    // if(num % 2 == 0)
+    // {
+    //     res.send({
+    //         resultado: 'par'
+    //     });
+    // }
+    // else
+    // {
+    //     res.send({
+    //         resultado: 'impar'
+    //     })
+    // }
+});
+
 app.listen(8080, () => console.log('Executando...'));
