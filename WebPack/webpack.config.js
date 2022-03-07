@@ -1,8 +1,8 @@
 const modoDev = process.env.NODE_ENV !== 'production';
 const webpack = require('webpack');
 const miniCssExtract = require('mini-css-extract-plugin');
-const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const optimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
     mode: modoDev ? 'development' : 'production',
@@ -13,9 +13,11 @@ module.exports = {
     },
     optimization: {
         minimizer: [
-            new uglifyJsPlugin({
-                cache: true,
-                parallel: true
+            new TerserPlugin({
+                parallel: true,
+                terserOptions: {
+                    ecma: 6,
+                },
             }),
             new optimizeCSSAssetsPlugin({})
         ]
