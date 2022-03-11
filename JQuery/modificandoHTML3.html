@@ -19,7 +19,20 @@
             { nome: 'Carlos', nota: 7.6 },
             { nome: 'Julia', nota: 9.7 }
         ]
+
+        const tabela = $('<table></table>');
         
-        // ...
+        $('#conteudo').replaceWith(function() {
+            pessoas.forEach(pessoa => {
+                const linha = $('<tr></tr>');
+
+                $(linha).append(`<td>${pessoa.nome}</td>`);
+                $(linha).append(`<td>${pessoa.nota}</td>`);
+
+                $(tabela).append(linha);
+            });
+
+            return tabela;
+        });
     </script>
 </body>
