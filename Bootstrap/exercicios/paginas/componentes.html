@@ -172,6 +172,35 @@
 <hr>
 
 <!-- Accordion -->
+<div>
+    <div class="mb-5" id="accordion">
+        <div class="card">
+            <div class="card-header" id="pergunta1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#resposta1">
+                        Quem é o professor?
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="resposta1" data-parent="#accordion">
+                <div class="card-body">Leo da Cod3r</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="pergunta2">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#resposta2">
+                        Qual é o curso?
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="resposta2" data-parent="#accordion">
+                <div class="card-body">De desenvolvimento web moderno</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
     $('[data-toggle="tooltip"]').tooltip();
